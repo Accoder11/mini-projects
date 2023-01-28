@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Sample Investment Computation</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title">Sample Investment Computation</h2>
+            <form action="#" id="investment">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <label for="money">Initial Deposit</label>
+                        </td>
+                        <td>
+                            <input
+                                type="tel"
+                                name="money"
+                                id="money"
+                                maxlength="15"
+                                size="20"
+                                required
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="months">How many months</label>
+                        </td>
+                        <td>
+                            <input
+                                type="number"
+                                name="months"
+                                id="months"
+                                placeholder="(3 months minimum)"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="interest">Interest per year (%)</label>
+                        </td>
+                        <td>
+                            <input
+                                type="number"
+                                name="interest"
+                                id="interest"
+                                required
+                            />
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button id="reset">reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <table class="diagram">
+                <tr>
+                    <th>Initial Amount</th>
+                    <th>Profit Earned</th>
+                    <th>With Interest</th>
+                </tr>
+                <tr>
+                    <td id="initial-amount"></td>
+                    <td id="profit-earned"></td>
+                    <td id="with-interest"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="initial-bar"></div>
+                    </td>
+                    <td>
+                        <div class="profit-bar"></div>
+                    </td>
+                    <td>
+                        <div class="interest-bar"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="form.js"></script>
+        <a
+            id="my-link"
+            href="https://github.com/Accoder11/mini-projects"
+            target="_blank"
+            >visit my github folder here👈</a
+        >
+    </body>
+</html>
